@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pagina informativa sobre el mantenimiento y aseguramiento de la operacion del sistema informatico." />
+  <meta name="author" content="Estudiante - Modulo Mantenimiento de Sistemas" />
+  <title>Mantenimiento y Aseguramiento de Sistemas Informaticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="kanji-bg" aria-hidden="true">
+    <span>保</span><span>護</span><span>シ</span><span>ス</span><span>テ</span><span>ム</span>
+  </div>
+
+  <header id="inicio">
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polygon points="14,1 20,10 27,10 22,16 24,25 14,20 4,25 6,16 1,10 8,10" stroke="url(#lg1)" stroke-width="1.5" fill="rgba(255,45,117,0.08)"/><circle cx="14" cy="13" r="3" fill="#ff2d75" opacity="0.9"/><defs><linearGradient id="lg1" x1="0" y1="0" x2="28" y2="28"><stop offset="0%" stop-color="#ff2d75"/><stop offset="100%" stop-color="#a855f7"/></linearGradient></defs></svg>
+        </div>
+        <h1 class="site-title">SISTEMAS</h1>
+      </div>
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#que-es">Que es</a></li>
+          <li class="has-dropdown">
+            <a href="#tipos">Tipos</a>
+            <ul class="dropdown">
+              <li><a href="#preventivo">Preventivo</a></li>
+              <li><a href="#correctivo">Correctivo</a></li>
+            </ul>
+          </li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#normas-iso">Normas ISO</a></li>
+          <li><a href="#itil">ITIL v3</a></li>
+          <li><a href="#calidad">Calidad</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-speed-lines" aria-hidden="true">
+      <div class="speed-line"></div><div class="speed-line"></div><div class="speed-line"></div>
+      <div class="speed-line"></div><div class="speed-line"></div><div class="speed-line"></div>
+    </div>
+    <div class="container">
+      <p class="hero-label" data-anime="hero">Modulo de formacion tecnica</p>
+      <h2 class="hero-title" data-anime="hero">La continuidad de un sistema no es casualidad</h2>
+      <p class="hero-text" data-anime="hero">Todo sistema informatico, sin importar su tamano o proposito, requiere atencion constante. Esta pagina reune los fundamentos del mantenimiento preventivo y correctivo, los planes de contingencia, las normas ISO y las practicas de ITIL v3 que hacen posible que los sistemas sigan operando de forma confiable, segura y eficiente a lo largo del tiempo.</p>
+      <a href="#que-es" class="btn-primary" data-anime="hero">Explorar el modulo</a>
+    </div>
+  </section>
+
+  <section id="que-es" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Introduccion</span>
+        <h2>Que es el mantenimiento de un sistema informatico</h2>
+      </div>
+      <div class="content-grid two-col">
+        <div class="text-block">
+          <p>El mantenimiento de un sistema informatico es el conjunto de acciones tecnicas y organizativas que se realizan para garantizar que los equipos, software y servicios funcionen correctamente, de forma continua y dentro de los parametros de calidad esperados por la organizacion.</p>
+          <p>No se trata unicamente de reparar lo que falla. El mantenimiento moderno implica anticiparse a los problemas antes de que ocurran, documentar cada proceso, cumplir con estandares internacionales y adoptar metodologias que han demostrado ser efectivas en la industria tecnologica.</p>
+          <p>Un sistema que no se mantiene adecuadamente tiende a degradarse con el tiempo. Las fallas se vuelven mas frecuentes, los costos de reparacion aumentan y la productividad de la organizacion se ve comprometida. Por eso, el mantenimiento no es un gasto, sino una inversion en la estabilidad operativa.</p>
+        </div>
+        <aside class="highlight-box">
+          <h3>Objetivos principales</h3>
+          <ul class="icon-list">
+            <li>Garantizar la disponibilidad continua del sistema</li>
+            <li>Prevenir fallos antes de que afecten la operacion</li>
+            <li>Reducir el tiempo de inactividad no planificado</li>
+            <li>Prolongar la vida util de los equipos y el software</li>
+            <li>Asegurar la integridad y seguridad de la informacion</li>
+            <li>Cumplir con normas y estandares reconocidos internacionalmente</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="tipos" class="section-block alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clasificacion</span>
+        <h2>Tipos de mantenimiento</h2>
+        <p class="section-intro">El mantenimiento de sistemas informaticos no es un proceso unico. Dependiendo del momento en que se aplique y del objetivo que persiga, se clasifica en distintas categorias, cada una con sus propias tecnicas, herramientas y responsabilidades.</p>
+      </div>
+      <div class="cards-row">
+        <div class="info-card" data-anime="card">
+          <div class="card-label">Tipo 01</div>
+          <h3>Preventivo</h3>
+          <p>Se realiza de forma programada y periodica para evitar que los problemas ocurran. Incluye limpieza de equipos, actualizaciones de software, revision de logs y verificacion del rendimiento del sistema.</p>
+          <a href="#preventivo" class="card-link">Leer mas</a>
+        </div>
+        <div class="info-card" data-anime="card">
+          <div class="card-label">Tipo 02</div>
+          <h3>Correctivo</h3>
+          <p>Se ejecuta cuando ya existe un fallo o anomalia en el sistema. Su objetivo es restaurar el funcionamiento normal en el menor tiempo posible, minimizando el impacto en la operacion de la organizacion.</p>
+          <a href="#correctivo" class="card-link">Leer mas</a>
+        </div>
+        <div class="info-card" data-anime="card">
+          <div class="card-label">Tipo 03</div>
+          <h3>Predictivo</h3>
+          <p>Utiliza datos en tiempo real, metricas de rendimiento y herramientas de monitoreo para anticipar cuando podria fallar un componente, permitiendo actuar antes de que el problema se materialice.</p>
+          <a href="#planes" class="card-link">Ver planes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="preventivo" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tipo 01</span>
+        <h2>Mantenimiento preventivo</h2>
+      </div>
+      <div class="content-grid two-col">
+        <div class="text-block">
+          <p>El mantenimiento preventivo parte de una premisa simple: es mejor invertir tiempo y recursos en revisar el sistema regularmente que esperar a que algo falle. A diferencia del mantenimiento correctivo, este no responde a un problema, sino que trabaja para que ese problema nunca llegue a ocurrir.</p>
+          <p>En la practica, esto significa programar revisiones periodicas, establecer calendarios de actualizacion, monitorear el uso de recursos del sistema y documentar cada actividad realizada. Todo queda registrado para poder analizar tendencias y tomar decisiones con informacion concreta.</p>
+          <p>Una organizacion que aplica mantenimiento preventivo de forma disciplinada reduce significativamente los tiempos de inactividad no planificados, extiende la vida util de sus equipos y mantiene un ambiente de trabajo mas estable para sus usuarios.</p>
+        </div>
+        <div class="checklist-box">
+          <h3>Actividades tipicas</h3>
+          <ul class="checklist">
+            <li><span class="check-mark">&#10003;</span> Limpieza fisica de equipos y perifericos</li>
+            <li><span class="check-mark">&#10003;</span> Actualizacion de sistema operativo y aplicaciones</li>
+            <li><span class="check-mark">&#10003;</span> Revision y limpieza de archivos temporales y logs</li>
+            <li><span class="check-mark">&#10003;</span> Verificacion del estado del disco duro (SMART)</li>
+            <li><span class="check-mark">&#10003;</span> Comprobacion de copias de seguridad (backups)</li>
+            <li><span class="check-mark">&#10003;</span> Analisis de rendimiento de la red y servidores</li>
+            <li><span class="check-mark">&#10003;</span> Revision de licencias y vigencia de software</li>
+            <li><span class="check-mark">&#10003;</span> Documentacion de todas las actividades realizadas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <h3>Frecuencia recomendada de actividades</h3>
+        <table class="data-table">
+          <thead><tr><th>Actividad</th><th>Frecuencia</th><th>Responsable</th></tr></thead>
+          <tbody>
+            <tr><td>Limpieza fisica de equipos</td><td>Cada 3 meses</td><td>Tecnico de soporte</td></tr>
+            <tr><td>Actualizaciones de seguridad</td><td>Mensual</td><td>Administrador de sistemas</td></tr>
+            <tr><td>Verificacion de backups</td><td>Semanal</td><td>Administrador de sistemas</td></tr>
+            <tr><td>Revision de logs del sistema</td><td>Diaria</td><td>Equipo de operaciones</td></tr>
+            <tr><td>Auditoria completa del sistema</td><td>Anual</td><td>Equipo de TI + Auditores</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="correctivo" class="section-block alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tipo 02</span>
+        <h2>Mantenimiento correctivo</h2>
+      </div>
+      <p class="section-intro">Por mas riguroso que sea el mantenimiento preventivo, los fallos no siempre se pueden evitar. El mantenimiento correctivo es el proceso que entra en accion cuando el sistema ya presenta una falla, y su efectividad depende directamente de que tan bien preparado este el equipo tecnico para responder.</p>
+      <div class="steps-grid">
+        <div class="step-card" data-anime="step">
+          <div class="step-number">01</div>
+          <h3>Deteccion del fallo</h3>
+          <p>El primer paso es identificar con precision que componente, servicio o proceso ha fallado. Esto puede suceder por reportes de usuarios, alertas del sistema de monitoreo o durante una revision rutinaria.</p>
+        </div>
+        <div class="step-card" data-anime="step">
+          <div class="step-number">02</div>
+          <h3>Diagnostico</h3>
+          <p>Una vez detectado el fallo, el tecnico analiza los logs, revisa el estado de los servicios y determina la causa raiz del problema. Un buen diagnostico evita aplicar soluciones temporales que no resuelven el problema de fondo.</p>
+        </div>
+        <div class="step-card" data-anime="step">
+          <div class="step-number">03</div>
+          <h3>Solucion y restauracion</h3>
+          <p>Con la causa identificada, se aplica la correccion correspondiente: puede ser un reinicio de servicio, reemplazo de hardware, restauracion desde backup, reinstalacion de software o ajuste de configuraciones.</p>
+        </div>
+        <div class="step-card" data-anime="step">
+          <div class="step-number">04</div>
+          <h3>Verificacion y documentacion</h3>
+          <p>Despues de aplicar la solucion, se verifica que el sistema funcione correctamente. Todo el proceso debe quedar documentado: que fallo, cuando, como se resolvio y que tiempo tomo la recuperacion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planes" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Planificacion</span>
+        <h2>Planes operativos y de contingencia</h2>
+      </div>
+      <div class="content-grid two-col">
+        <div class="text-block">
+          <p>Un plan de contingencia es un documento formal que describe que debe hacer la organizacion cuando ocurre una falla grave que afecta la continuidad del servicio. No se improvisa en el momento del problema: se prepara con anticipacion, se prueba y se actualiza periodicamente.</p>
+          <p>El plan operativo, por su parte, establece las rutinas diarias del equipo de TI: quien es responsable de que, cuales son los procedimientos estandar, como se escala un problema y cuales son los tiempos de respuesta esperados para cada tipo de incidente.</p>
+          <p>Juntos, estos dos documentos forman la base de una operacion estable. Una organizacion que cuenta con ellos puede responder a crisis de forma ordenada, sin depender de la memoria o el criterio individual de una sola persona.</p>
+        </div>
+        <div class="highlight-box">
+          <h3>Elementos de un plan de contingencia</h3>
+          <ul class="icon-list">
+            <li>Identificacion de riesgos y amenazas criticas</li>
+            <li>Definicion de escenarios de fallo posibles</li>
+            <li>Roles y responsabilidades del equipo de respuesta</li>
+            <li>Procedimientos paso a paso para cada escenario</li>
+            <li>Plan de comunicacion interna y externa</li>
+            <li>Estrategia de recuperacion de datos (RTO y RPO)</li>
+            <li>Cronograma de pruebas y simulacros</li>
+            <li>Historial de actualizaciones del documento</li>
+          </ul>
+        </div>
+      </div>
+      <div class="concept-row">
+        <div class="concept-card" data-anime="card">
+          <h3 class="concept-title">RTO</h3>
+          <p class="concept-full">Recovery Time Objective</p>
+          <p>Es el tiempo maximo aceptable que un sistema puede estar fuera de servicio despues de una falla. Definir el RTO permite priorizar los recursos durante una crisis y establece expectativas claras para la organizacion.</p>
+        </div>
+        <div class="concept-card" data-anime="card">
+          <h3 class="concept-title">RPO</h3>
+          <p class="concept-full">Recovery Point Objective</p>
+          <p>Es la cantidad maxima de datos que la organizacion esta dispuesta a perder en caso de falla. Determina con que frecuencia deben realizarse los respaldos y que tan reciente debe ser la ultima copia de seguridad disponible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="normas-iso" class="section-block alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Estandares internacionales</span>
+        <h2>Normas ISO aplicadas a sistemas informaticos</h2>
+        <p class="section-intro">Las normas ISO son estandares reconocidos a nivel mundial que establecen criterios minimos de calidad, seguridad y eficiencia para distintos procesos organizacionales. En el ambito de los sistemas informaticos, varias de estas normas son especialmente relevantes para garantizar una operacion confiable.</p>
+      </div>
+      <div class="iso-grid">
+        <div class="iso-card" data-anime="iso"><div class="iso-code">ISO 9001</div><h3>Sistemas de Gestion de Calidad</h3><p>Establece los requisitos para implementar un sistema de gestion de calidad dentro de una organizacion. Aplicada a TI, asegura que los procesos de soporte, mantenimiento y entrega de servicios tecnologicos se realicen de forma consistente y orientada a la mejora continua.</p></div>
+        <div class="iso-card" data-anime="iso"><div class="iso-code">ISO 27001</div><h3>Seguridad de la Informacion</h3><p>Define los requisitos para establecer, implementar y mantener un Sistema de Gestion de Seguridad de la Informacion (SGSI). Cubre la proteccion de datos frente a accesos no autorizados, perdidas, alteraciones y cualquier amenaza que comprometa la confidencialidad del sistema.</p></div>
+        <div class="iso-card" data-anime="iso"><div class="iso-code">ISO 20000</div><h3>Gestion de Servicios de TI</h3><p>Es el estandar internacional especifico para la gestion de servicios de tecnologia de informacion. Define buenas practicas para la planificacion, entrega, control y mejora de los servicios de TI, y esta directamente alineado con los principios de ITIL.</p></div>
+        <div class="iso-card" data-anime="iso"><div class="iso-code">ISO 22301</div><h3>Continuidad del Negocio</h3><p>Se centra en los planes de continuidad de negocio. Establece como las organizaciones deben prepararse para hacer frente a interrupciones graves en sus operaciones, incluyendo fallos tecnologicos mayores, desastres naturales o incidentes de seguridad criticos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="itil" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Buenas practicas</span>
+        <h2>ITIL v3: Gestion de servicios de TI</h2>
+      </div>
+      <div class="content-grid two-col">
+        <div class="text-block">
+          <p>ITIL (Information Technology Infrastructure Library) es un conjunto de buenas practicas para la gestion de servicios de tecnologia de informacion. Su version 3, publicada en 2007 y actualizada en 2011, organiza la gestion de TI en torno a un ciclo de vida del servicio compuesto por cinco fases claramente definidas.</p>
+          <p>A diferencia de una norma obligatoria, ITIL es un marco de referencia: las organizaciones lo adoptan de forma voluntaria y lo adaptan a su contexto particular. Su valor radica en que no fue disenado en un laboratorio academico, sino que surge de la experiencia acumulada de miles de organizaciones en todo el mundo.</p>
+          <p>Aplicar ITIL implica definir procesos claros para la gestion de incidentes, problemas, cambios, niveles de servicio y capacidad. Cada proceso tiene roles definidos, entradas, salidas y metricas de desempeno que permiten evaluar si el servicio se esta entregando correctamente.</p>
+        </div>
+        <div class="highlight-box">
+          <h3>Las 5 fases del ciclo de vida ITIL v3</h3>
+          <ol class="numbered-list">
+            <li><strong>Estrategia del Servicio:</strong> Define que servicios ofrecer, a quien y con que modelo de negocio.</li>
+            <li><strong>Diseno del Servicio:</strong> Establece como se disenan los servicios, incluyendo seguridad, disponibilidad y capacidad.</li>
+            <li><strong>Transicion del Servicio:</strong> Gestiona el paso de un servicio del desarrollo a produccion, incluyendo la gestion de cambios.</li>
+            <li><strong>Operacion del Servicio:</strong> Administra los servicios en funcionamiento: incidentes, problemas, accesos y eventos.</li>
+            <li><strong>Mejora Continua del Servicio:</strong> Evalua el desempeno y aplica mejoras basadas en metricas reales.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calidad" class="section-block alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Calidad y sostenibilidad</span>
+        <h2>Aseguramiento de la calidad del sistema</h2>
+        <p class="section-intro">El aseguramiento de la calidad en sistemas informaticos no es solo ejecutar pruebas antes de lanzar una aplicacion. Es un proceso continuo que abarca todo el ciclo de vida del sistema: desde su diseno hasta su retiro, pasando por cada actualizacion, cambio de configuracion y mejora que se realice durante su operacion.</p>
+      </div>
+      <div class="cards-row">
+        <div class="info-card" data-anime="card"><div class="card-label">Practica 01</div><h3>Monitoreo continuo</h3><p>Implementar herramientas de monitoreo en tiempo real permite detectar anomalias antes de que se conviertan en fallos. Se monitorea el uso de CPU, memoria, red, almacenamiento y los tiempos de respuesta de los servicios criticos.</p></div>
+        <div class="info-card" data-anime="card"><div class="card-label">Practica 02</div><h3>Gestion de cambios</h3><p>Todo cambio en el sistema debe evaluarse, aprobarse y documentarse antes de aplicarse. Un cambio no controlado puede introducir nuevos fallos. La gestion de cambios reduce ese riesgo sin frenar la evolucion del sistema.</p></div>
+        <div class="info-card" data-anime="card"><div class="card-label">Practica 03</div><h3>Metricas y KPIs</h3><p>Medir es la base de la mejora. Indicadores como la disponibilidad del sistema (uptime), el tiempo medio entre fallos (MTBF) y el tiempo medio de reparacion (MTTR) permiten evaluar objetivamente el desempeno del servicio.</p></div>
+      </div>
+      <div class="table-wrapper">
+        <h3>Indicadores clave de desempeno (KPIs) en sistemas informaticos</h3>
+        <table class="data-table">
+          <thead><tr><th>Indicador</th><th>Sigla</th><th>Descripcion</th><th>Meta tipica</th></tr></thead>
+          <tbody>
+            <tr><td>Disponibilidad del sistema</td><td>Uptime</td><td>Porcentaje del tiempo que el sistema esta operativo</td><td>99.9% o mas</td></tr>
+            <tr><td>Tiempo medio entre fallos</td><td>MTBF</td><td>Tiempo promedio que transcurre entre un fallo y el siguiente</td><td>Lo mas alto posible</td></tr>
+            <tr><td>Tiempo medio de reparacion</td><td>MTTR</td><td>Tiempo promedio que toma restaurar el sistema tras un fallo</td><td>Lo mas bajo posible</td></tr>
+            <tr><td>Tasa de incidentes resueltos</td><td>FCR</td><td>Porcentaje de incidentes resueltos en el primer contacto</td><td>Mayor al 70%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="conclusion" class="section-block conclusion-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Cierre del modulo</span>
+        <h2>Conclusion</h2>
+      </div>
+      <div class="conclusion-content">
+        <p>El mantenimiento y aseguramiento de la operacion de un sistema informatico es una disciplina que exige planificacion, disciplina tecnica y una cultura organizacional comprometida con la calidad. No basta con tener buenos equipos o un software actualizado si no existe un proceso formal que garantice su correcta operacion a lo largo del tiempo.</p>
+        <p>A lo largo de este modulo se ha visto que el mantenimiento preventivo evita problemas antes de que ocurran, el correctivo los resuelve cuando ya existen, y los planes de contingencia aseguran que la organizacion sepa exactamente que hacer cuando la situacion se sale del control ordinario.</p>
+        <p>Las normas ISO ofrecen un marco de referencia reconocido internacionalmente para estructurar estos procesos, mientras que ITIL v3 proporciona las buenas practicas concretas para operarlos dia a dia. Juntas, estas herramientas forman una base solida sobre la que cualquier organizacion puede construir una operacion tecnologica confiable, eficiente y sostenible.</p>
+        <blockquote class="final-quote">Un sistema bien mantenido no es el que nunca falla, sino el que cuando falla, sabe exactamente como recuperarse.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>Modulo</h4><p>Mantenimiento y Aseguramiento de la Operacion del Sistema Informatico</p></div>
+        <div class="footer-col"><h4>Contenido cubierto</h4><ul class="footer-list"><li>Mantenimiento preventivo y correctivo</li><li>Planes operativos y de contingencia</li><li>Normas ISO (9001, 27001, 20000, 22301)</li><li>Buenas practicas ITIL v3</li><li>Aseguramiento de la calidad</li></ul></div>
+        <div class="footer-col"><h4>Elaborado por</h4><p>Trabajo individual</p><p>Formacion tecnica en mantenimiento de sistemas</p><p class="footer-year">2025</p></div>
+      </div>
+      <div class="footer-bottom"><p>Pagina informativa elaborada con fines academicos. Todos los contenidos son de caracter educativo.</p></div>
+    </div>
+  </footer>
+
+  <a href="#inicio" class="back-to-top" aria-label="Volver al inicio de la pagina">&#8679;</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
